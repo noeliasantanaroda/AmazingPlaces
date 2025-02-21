@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build a web site</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans|Sofia|Grechen Fuemen|Phudu|Josefin Sans">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <style >
     
@@ -13,6 +14,8 @@ body{
     background-image: url('https://cdn.pixabay.com/photo/2021/09/16/08/56/leaves-6629581_1280.png');
     text-align: center;
     background-attachment:fixed;
+    margin: 0;
+    padding: 0;
     
 }
       
@@ -34,10 +37,10 @@ body{
 .Tittle{
     font-family: 'Tangerine', sans-serif;
     background-color: #073d12;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 15px;
+    margin-right: 15px;
     color: antiquewhite;
-    font-size: 8rem;
+    font-size: 5rem;
    
    
 }
@@ -56,11 +59,11 @@ b{
         color: #073d12;
         font-size: 2rem;
     }
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 50px;
-    margin-bottom: auto;
+     text-align: center;
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-top: 50px;
+     margin-bottom: auto;
     background-color: rgb(250, 253, 255);
     animation: change linear forwards;
     animation-timeline: view(block 80% auto);
@@ -79,10 +82,10 @@ b{
         font-size: 2rem;
     }
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 50px;
-    margin-bottom: auto;
+    margin-left: 15px;
+     margin-right: 15px;
+     margin-top: 50px;
+     margin-bottom: auto;
     background-color: rgb(248, 251, 253);
     animation: change linear forwards;
     animation-timeline: view(block 80% auto);
@@ -92,11 +95,73 @@ b{
 .foot-page{
     font-family: 'Tangerine', sans-serif;
     background-color: #073d12;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 315px;
+    margin-right: 315px;
     color: antiquewhite;
     font-size: 2rem;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+            .Tittle {
+                font-size: 4rem;
+            }
+
+            b {
+                font-size: 2.5rem;
+            }
+
+            .intro p {
+                font-size: 1.5rem;
+            }
+
+            .card-container b {
+                font-size: 2.5rem;
+            }
+
+            .card-container p {
+                font-size: 1.5rem;
+            }
+
+            .foot-page {
+                font-size: 1.5rem;
+            }
+
+            .box {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .Tittle {
+                font-size: 3rem;
+            }
+
+            b {
+                font-size: 2rem;
+            }
+
+            .intro p {
+                font-size: 1.2rem;
+            }
+
+            .card-container b {
+                font-size: 2rem;
+            }
+
+            .card-container p {
+                font-size: 1.2rem;
+            }
+
+            .foot-page {
+                font-size: 1.2rem;
+            }
+
+            .box {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
 </style>
 
 <body>
@@ -104,7 +169,7 @@ b{
          <H1 class="Tittle"> Amazing Places</H1>
     </div>
    <div class="container">
-    <div class="card">
+    <div class="card mb-4 p-3">
         <b>Today in Amazing Places we will talk about 5 beautiful places you should visit on Italy.</b>
     </div>
    </div>
